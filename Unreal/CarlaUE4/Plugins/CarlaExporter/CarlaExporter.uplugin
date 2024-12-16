@@ -1,23 +1,24 @@
 {
-	"FileVersion": 3,
-	"Version": 1,
-	"VersionName": "1.0",
-	"FriendlyName": "CarlaExporter",
-	"Description": "Export geometry for using in Recast",
-	"Category": "Other",
-	"CreatedBy": "Carla Team",
-	"CreatedByURL": "",
-	"DocsURL": "",
-	"MarketplaceURL": "",
-	"SupportURL": "",
-	"CanContainContent": false,
-	"IsBetaVersion": false,
-	"Installed": false,
-	"Modules": [
+	"FileVersion": 3,#可能表示这个文件的版本号，这里版本号用数字3来标识具体含义取决于使用该配置的软件或项目对于版本号的定义规则，
+比如可能代表经历了几次重大更新或者格式变更等。
+	"Version": 1,#表示版本，可能是内部用于程序逻辑判断等的版本标识
+	"VersionName": "1.0",#则以更符合人们阅读习惯的字符串形式 1.0 展示版本，通常用于向用户展示软件或插件的版本情况，方便用户直观知晓当前使用的版本
+	"FriendlyName": "CarlaExporter",#是一个给相关内容（可能是软件模块或者插件）起的友好名称，这里叫 CarlaExporter，方便用户识别和称呼该功能组件，相比一些内部的代码名称等更通俗易懂。
+	"Description": "Export geometry for using in Recast",#对其功能进行了简要描述，说明了这个 CarlaExporter 的主要作用是导出几何图形以便在 Recast 中使用，让使用者能快速了解它的用途。
+	"Category": "Other",#将其归类到 Other 类别下，这表明在某个分类体系里它属于 “其他” 类型，具体的分类可能用于软件界面上对不同功能模块进行分组展示或者管理等操作。
+	"CreatedBy": "Carla Team",#明确指出了该内容的创建者是 Carla Team，有助于使用者了解其来源和归属。
+	"CreatedByURL": "",#创建者相关网站链接
+	"DocsURL": "",#文档说明的网址
+	"MarketplaceURL": "",#软件所在市场平台的链接
+	"SupportURL": "",#技术支持的网址
+	"CanContainContent": false,#是一个布尔值，表示这个组件是否能够包含内容，这里设置为 false，说明它不具备包含其他内容的能力，具体 “包含内容” 的含义同样取决于使用场景的定义，比如是否能包含子模块、子文件等情况。
+	"IsBetaVersion": false,#用于表明当前是否是测试版本（beta 版本），false 表示不是测试版，意味着这大概率是一个正式发布的版本供用户正常使用。
+	"Installed": false,#也是布尔值，可能用于表示该软件组件或插件是否已经安装，这里为 false 说明还未安装，或许在某些安装管理相关的逻辑中会依据这个属性值来判断是否需要执行安装操作等。
+	"Modules"#这是一个数组属性，数组内包含了对象元素，每个对象用于描述具体的模块信息。: [
 		{
-			"Name": "CarlaExporter",
-			"Type": "Editor",
-			"LoadingPhase": "Default"
+			"Name": "CarlaExporter",#再次重复了模块的名称，和前面的 FriendlyName 等对应，进一步明确该模块叫这个名字。
+			"Type": "Editor",#说明了模块的类型是 Editor，意味着它可能和编辑功能相关，比如是在某个软件环境中用于特定编辑操作的模块，具体的编辑功能则要结合整个软件的功能体系去理解。
+			"LoadingPhase": #"Default"表示模块的加载阶段是 Default，推测是在软件启动或者相关流程中，该模块按照默认的阶段进行加载，不同的加载阶段可能有不同的先后顺序以及资源分配等规则，以保障软件的正常运行。
 		}
 	]
 }

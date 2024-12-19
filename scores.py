@@ -1,7 +1,7 @@
-import requests
+import requests#导入request模块，用于请求
 
-import argparse
-import os
+import argparse#导入argparse模块，用于处理命令行参数
+import os#导入os模块，用于提供与操作系统交互
 
 from collections import defaultdict
 from collections import Counter
@@ -131,6 +131,7 @@ while True:
 
     page += 1
 
+#按数量排序issue_counts和comment_counts
 sorted_issue_counts = dict(sorted(issue_counts.items(), key=lambda item: item[1], reverse=True))
 sorted_comment_counts = dict(sorted(comment_counts.items(), key=lambda item: item[1], reverse=True))
 
